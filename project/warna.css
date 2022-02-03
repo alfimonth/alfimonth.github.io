@@ -1,0 +1,73 @@
+#a {
+    z-index: 1;
+    position: fixed;
+    top: 10%;
+    right: 0;
+}
+
+#a button {
+    cursor: pointer;
+}
+
+
+.contain {
+    z-index: 2;
+    position: fixed;
+    border-radius: 5px;
+    background-color: white;
+    top: 10%;
+    right: 0;
+    width: 200px;
+    display: none;
+    border-top: 1px solid black;
+    box-shadow: -5px 5px 5px black;
+}
+
+.contain:target {
+    display: block;
+}
+
+
+.contain a button {
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 10px;
+}
+
+.contain a button:hover{
+    background-color: rgb(255, 0, 0);
+    font-weight: bold;
+    color: white;
+}
+
+.boxcolor h4{
+    padding: 5px 0 0 12px;
+}
+
+.change-color{
+    font-size: 0;
+    margin: 0 10px 10px;
+}
+
+.change-color div{
+    vertical-align: top;
+    display: inline-block;
+}
+
+.change-color .pilih input{
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    width: 130px;
+    height: 30px;
+    background-color: white;
+}
+
+.change-color .confirm button{
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    margin: 5px;
+    
+}
+    
