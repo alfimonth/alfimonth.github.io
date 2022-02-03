@@ -7,7 +7,7 @@ console.log(ob)
 for(let i = 0; i < ob.length; i++){
     const awX = ob[i].getBoundingClientRect().left ;
     const awY = ob[i].getBoundingClientRect().top ;
-    ob[i].addEventListener('mousedown',md)
+    ob[i].addEventListener('touchstart',md)
     function md(e){
         ob[i].style.cursor = 'pointer';
         const prevX = e.clientX;
@@ -16,8 +16,8 @@ for(let i = 0; i < ob.length; i++){
         const prevtop = ob[i].getBoundingClientRect().top -awY ;
         console.log(prevtop)
         
-        window.addEventListener('mousemove',mm)
-        window.addEventListener('mouseup',mu)
+        window.addEventListener('touchmove',mm)
+        window.addEventListener('touchend',mu)
         function mm(e){
     
             const newX = e.clientX;
@@ -30,8 +30,8 @@ for(let i = 0; i < ob.length; i++){
         }
     
         function mu(){
-            window.removeEventListener("mousemove", mm)
-            window.removeEventListener("mouseup", mu)
+            window.removeEventListener("touchmove", mm)
+            window.removeEventListener("touchend", mu)
         }
     
     }
