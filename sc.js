@@ -167,6 +167,7 @@ function posisi(drag,end,e){
 
         window.addEventListener(end,mu)
         function mu(){
+            ob.style.backgroundColor = "white";
             window.removeEventListener(drag, mm)
             window.removeEventListener(end, mu)
         }
