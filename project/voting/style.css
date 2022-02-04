@@ -1,0 +1,59 @@
+.container{
+    border: 3px solid black;
+    width: 80%;
+    margin: 50px auto;
+}
+.container .info{
+    border: 3px solid black;
+    display: flex;
+    padding: 5px;
+}
+.container .info div{
+    flex: 1;
+    margin: 5px;
+}
+.container .info div .legend{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+}
+.container .info div .value{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 100px;
+    font-size: 50px;
+    line-height: 100px;
+}
+.container .info div.q{
+    border: 3px solid blue;
+}
+.container .info div.v{
+    border: 3px solid green;
+}
+.container .info div.x{
+    border: 3px solid red;
+}
+
+
+.container .tombol{
+    border: 3px solid black;
+    display: flex;
+    padding: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.container .tombol div{
+    text-align: center;
+    font-size: 100px;
+    line-height: 200px;
+    flex-grow: 1;
+    margin: 5px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.container .tombol .agree{
+    background-color: green;
+}
+.container .tombol .disagree{
+    background-color: red;
+}
