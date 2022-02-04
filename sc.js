@@ -146,11 +146,12 @@ con.addEventListener('touchstart',function(e){
 function posisi(drag,end,e){
     if(e.target.className == 'ob' ){
         const ob = e.target;
+        ob.style.backgroundColor = "red";
         const stl = getComputedStyle(ob);
         const prevleft = stl.left;
         const prevtop = stl.top ; 
-        const prevX = e.clientX;
-        const prevY = e.clientY;
+        const prevX = e.clientX || e.targetTouches[0].pageX;
+        const prevY = e.clientY || e.targetTouches[0].pageY;
 
         window.addEventListener(drag,mm)
         function mm(e){
